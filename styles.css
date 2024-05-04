@@ -1,0 +1,377 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3; /* Light gray background */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+/* Navigation Bar styles */
+.navbar {
+    background-color: #343a40; /* Dark gray navbar */
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: #ffffff; /* White text */
+}
+
+.navbar-brand:hover, .navbar-nav .nav-link:hover {
+    color: #cccccc; /* Light gray on hover */
+}
+
+/* Main Content styles */
+.featured-anime {
+    margin-bottom: 40px;
+}
+
+.featured-anime .card {
+    border: none;
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.featured-anime .card-img-top {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.featured-anime .card-body {
+    padding: 20px;
+}
+
+.featured-anime .card-title {
+    margin-bottom: 10px;
+}
+
+.featured-anime .card-text {
+    margin-bottom: 20px;
+}
+
+/* Sidebar styles */
+.sidebar {
+    background-color: #ffffff; /* White background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.trending-topics ul,
+.recently-added ul,
+.user-generated-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.trending-topics ul li,
+.recently-added ul li,
+.user-generated-content ul li {
+    margin-bottom: 10px;
+}
+
+.trending-topics ul li a,
+.recently-added ul li a,
+.user-generated-content ul li a {
+    color: #343a40; /* Dark gray text */
+    text-decoration: none;
+}
+
+.trending-topics ul li a:hover,
+.recently-added ul li a:hover,
+.user-generated-content ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styles */
+.footer {
+    text-align: center;
+    background-color: #343a40; /* Dark gray footer */
+    color: #ffffff; /* White text */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0; /* Adjusted padding */
+}
+
+/* Anime Directory styles */
+.anime-directory {
+    background-color: #f3f3f3;
+    padding: 50px 0;
+}
+
+.anime-listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+}
+
+.anime-listing {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.anime-listing img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.anime-details {
+    margin-top: 20px;
+}
+
+.anime-details h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.anime-details p {
+    margin: 5px 0;
+}
+
+.anime-details .btn {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.anime-details .btn:hover {
+    background-color: #0056b3;
+    color: #ffffff;
+}
+
+
+/* Blog Section styles */
+.blog-section {
+    background-color: #f3f3f3;
+    padding: 50px 0;
+}
+
+.blog-post {
+    margin-bottom: 40px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.meta {
+    color: #999999;
+    margin-bottom: 10px;
+}
+
+.blog-icons {
+    margin-bottom: 20px;
+}
+
+.blog-icons .icon {
+    color: #007bff;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.blog-icons .icon:hover {
+    color: #0056b3;
+}
+
+.comments {
+    margin-top: 20px;
+}
+
+.comment {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.comment p {
+    margin: 0;
+}
+
+.comment-form h4 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.comment-form .form-group {
+    margin-bottom: 20px;
+}
+
+.comment-form .form-control {
+    width: 100%;
+}
+
+.comment-form .btn {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.comment-form .btn:hover {
+    background-color: #0056b3;
+}
+
+
+/* Gallery Section styles */
+.gallery-section {
+    background-color: #f3f3f3;
+    padding: 50px 0;
+}
+
+.gallery-section h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.anime-buttons {
+    margin-bottom: 20px;
+}
+
+.anime-buttons .btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Download Section styles */
+.download-section {
+    background-color: #f3f3f3;
+    padding: 50px 0;
+}
+
+.download-section h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.filters {
+    margin-bottom: 20px;
+}
+
+.filters select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.download-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.download-link {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.download-link h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.download-link p {
+    margin: 5px 0;
+}
+
+.download-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.download-link a:hover {
+    text-decoration: underline;
+}
+
+
+/* Community Section styles */
+.community-section {
+    background-color: #f3f3f3;
+    padding: 50px 0;
+}
+
+.community-section h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.forum,
+.user-profiles {
+    margin-bottom: 40px;
+}
+
+.forum h3,
+.user-profiles h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.forum-topics,
+.profiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.topic,
+.profile {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}

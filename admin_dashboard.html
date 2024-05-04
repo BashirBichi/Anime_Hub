@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-bottom: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    color: #f0f0f0;
+}
+
+/* Main Content Styles */
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.user-profile img {
+    width: 100px;
+    height: 75px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.user-profile span {
+    font-size: 18px;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+</style>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2>Admin Dashboard</h2>
+            <ul class="nav-links">
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#user-management">User Management</a></li>
+                <li><a href="#content-management">Content Management</a></li>
+                <li><a href="#comment-moderation">Comment Moderation</a></li>
+                <li><a href="#issue-handling">Issue Handling</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="header">
+                <h2>Welcome Admin</h2>
+                <div class="user-profile">
+                    <img src="./images/luffy1.jfif" alt="Admin Profile Picture">
+                    <span>Luffy D Monkey</span>
+                </div>
+            </div>
+            <div class="cards-container">
+                <!-- Dashboard Section -->
+                <div id="dashboard" class="card">
+                    <h3>Dashboard</h3>
+                    <p>Welcome to the Admin Dashboard.</p>
+                </div>
+
+                <!-- User Management Section -->
+                <div id="user-management" class="card">
+                    <h3>User Management</h3>
+                    <!-- Placeholder for User Management content -->
+                </div>
+                
+                <!-- Content Management Section -->
+                <div id="content-management" class="card">
+                    <h3>Content Management</h3>
+                    <!-- Placeholder for Content Management content -->
+                </div>
+
+                <!-- Comment Moderation Section -->
+                <div id="comment-moderation" class="card">
+                    <h3>Comment Moderation</h3>
+                    <!-- Placeholder for Comment Moderation content -->
+                </div>
+
+                <!-- Issue Handling Section -->
+                <div id="issue-handling" class="card">
+                    <h3>Issue Handling</h3>
+                    <!-- Placeholder for Issue Handling content -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

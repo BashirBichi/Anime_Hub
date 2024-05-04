@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community - Pyramid City Anime Hub</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Pyramid City Anime Hub</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="anime_directory.html">Anime Directory</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog_section.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Community Section -->
+    <section class="community-section">
+        <div class="container">
+            <h2>Community</h2>
+            <!-- Forum -->
+            <div class="forum">
+                <h3>Forum</h3>
+                <!-- Forum Topics (loaded dynamically) -->
+                <div class="forum-topics" id="forum-topics">
+                    <!-- Topics will be dynamically loaded here -->
+                </div>
+            </div>
+            <!-- User Profiles -->
+            <div class="user-profiles">
+                <h3>User Profiles</h3>
+                <!-- User Profiles (loaded dynamically) -->
+                <div class="profiles" id="profiles">
+                    <!-- Profiles will be dynamically loaded here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer mt-5 py-3 bg-light">
+        <div class="container">
+            <span class="text-muted">© Pyramid City Anime Hub 2024.  All rights reserved.</span>
+        </div>
+    </footer>
+    <script src="script.js">
+        document.addEventListener("DOMContentLoaded", function() {
+    const forumTopics = document.getElementById("forum-topics");
+    const profiles = document.getElementById("profiles");
+
+    // Example data for forum topics
+    const forumData = [
+        { title: "Discussion about Demon Slayer", author: "User123", date: "March 25, 2024" },
+        { title: "Favorite Naruto Characters", author: "AnimeFan99", date: "March 24, 2024" },
+        // Add more forum topics
+    ];
+
+    // Example data for user profiles
+    const profileData = [
+        { username: "User123", bio: "Anime enthusiast", followers: 100 },
+        { username: "AnimeFan99", bio: "Fan of shonen anime", followers: 150 },
+        // Add more profiles
+    ];
+
+    // Function to load forum topics
+    function loadForumTopics() {
+        forumData.forEach(topic => {
+            const topicElement = document.createElement("div");
+            topicElement.classList.add("topic");
+            topicElement.innerHTML = `
+                <h4>${topic.title}</h4>
+                <p>By ${topic.author} - ${topic.date}</p>
+            `;
+            forumTopics.appendChild(topicElement);
+        });
+    }
+
+    // Function to load user profiles
+    function loadUserProfiles() {
+        profileData.forEach(profile => {
+            const profileElement = document.createElement("div");
+            profileElement.classList.add("profile");
+            profileElement.innerHTML = `
+                <h4>${profile.username}</h4>
+                <p>${profile.bio}</p>
+                <p>Followers: ${profile.followers}</p>
+            `;
+            profiles.appendChild(profileElement);
+        });
+    }
+
+    // Load forum topics and user profiles on page load
+    loadForumTopics();
+    loadUserProfiles();
+});
+
+    </script>
+</body>
+</html>
